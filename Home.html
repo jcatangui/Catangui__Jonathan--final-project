@@ -3,9 +3,9 @@
 <head>
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -37,22 +37,44 @@
         </section>
         <!--Resume section-->
         <section id="resume">
-            <h1>Here is what I've done.</h1>
-            <header>Employment</header>
-            <article>
-                Automation & Software Development Manager at Total Meter Services
-                <aside>August 2013 to Present</aside>
-            </article>
-            <article>
-                Support & Implementation Consultant at Total Meter Services
-                <aside>April 2017 to August 2013</aside>
-            </article>
-
-
+            <section class="resumeContainer">
+                <!--Resume Details Seciton-->
+                <h1>Here is what I've done.</h1>
+                <article class="empDetails">
+                    <header>Employment</header>
+                    Automation & Software Development Manager at Total Meter Services
+                    <aside>August 2013 to Present</aside>
+                </article>
+                <article class="empDetails">
+                    <header>Employment</header>
+                    Support & Implementation Consultant at Total Meter Services
+                    <aside>April 2017 to August 2013</aside>
+                </article>
+                <article class="empDetails">
+                    <header>Education</header>
+                    Bachelor of Technology in Electronics Engineering Technology<br>
+                    RCC Institute of Technology
+                    <aside>September 2004 to April 2007</aside>
+                </article>
+            
+                <!-- Next / Previous arrows for slider -->
+                <a class="prev" onclick="moveDetail(-1)">&#10094;</a>
+                <a class="next" onclick="moveDetail(1)">&#10095;</a>
+            
+                <!--Navigation dashes-->
+                <div class="dashContainer">
+                    <span class="dash" onclick="selectedDetail(1)"></span>
+                    <span class="dash" onclick="selectedDetail(2)"></span>
+                    <span class="dash" onclick="selectedDetail(3)"></span>
+                </div>
+            
+            </section>
+        
         </section>
         <!--Portfolio section-->
         <section id="portfolio">
             <section class=projectGrid">
+                <h1>Portfolio</h1>
                 <article class="project"> 
                     Puppy age Calculator
                 </article>
@@ -83,7 +105,7 @@
 
 
 
-
+        <script src="/app.js"></script>
 </body>
 
 </html>

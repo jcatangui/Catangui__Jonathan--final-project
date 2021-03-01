@@ -7,7 +7,7 @@
 body {
   font-family: "DotGothic16", sans-serif;
   background: darkgrey;
-  color: #ffffff;
+  color: white;
   line-height: 1.6;
   height: 100vh;
   overflow: hidden;
@@ -43,7 +43,7 @@ nav ul {
 }
 
 nav a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -76,6 +76,7 @@ section {
 
 section h1 {
   font-size: 4rem;
+  top: 100px;
 }
 
 section p {
@@ -84,24 +85,21 @@ section p {
 }
 
 section#about {
-  background: #282828;
+  background: #414141;
   /* background: url(/img/pexels-felix-mittermeier-1146134.jpg) no-repeat center
     center/cover; */
 }
 
 section#resume {
-  background: url(/img/pexels-francesco-ungaro-998641.jpg) no-repeat center
-    center/cover;
+  background: #2c2c2c;
 }
 
 section#portfolio {
-  background: url(/img/pexels-hristo-fidanov-1252890.jpg) no-repeat center
-    center/cover;
+  background: #1f1f1f;
 }
 
 section#contact {
-  background: url(/img//pexels-miriam-espacio-110854.jpg) no-repeat center
-    center/cover;
+  background: #181818;
 }
 
 article {
@@ -117,7 +115,81 @@ header {
   font-size: 1.5rem;
   margin: 30px;
 }
+/*----Employment Slider----*/
 
+.resumeContainer {
+  position: relative;
+}
+
+.empDetails {
+  display: none;
+  padding: 100px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color:
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 40;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+  position: absolute;
+  left: 40;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color:darkgray;
+}
+
+/* The dots/bullets/indicators */
+.dash {
+  cursor: pointer;
+  height: 10px;
+  width: 35px;
+  margin: 0 2px;
+  background-color: darkslategray;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+/* Add a background color to the active dot/circle */
+.dash:hover {
+  background-color: darkgray;
+}
+
+.active {
+  background-color: white;
+}
+
+/* Add a blue color to the author */
+aside {
+  color: rgb(21, 255, 0);
+}
+
+/*----Scroll Bar Styles----*/
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
