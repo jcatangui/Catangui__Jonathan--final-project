@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="img/JC_Favicon.png">
 </head>
 
 <body>
@@ -31,9 +31,11 @@
 
         <!--Home / About Me section-->
         <section id="about">
-            <h1>Hi, I'm Jonathan. Nice to meet you!</h1>
+            <h1>Hi, I'm Jonathan. <span class="highlight">Nice to meet you!</span></h1>
             <p>Ever since I can remember I've been passionate about technology.
-                I started my career in the hardware electronics space.  Slowly as life progressed, so did my work needs.  I've slowly been getting involved in the software side of things.  Today I'm adding another skill set in the form of Full Stack Web Development.</p>
+                I started my career in the hardware electronics space. Slowly as life progressed, so did my work needs.
+                I've slowly been getting involved in the software side of things. Today I'm adding another skill set in
+                the form of Full Stack Web Development.</p>
         </section>
         <!--Resume section-->
         <section id="resume">
@@ -56,31 +58,40 @@
                     RCC Institute of Technology
                     <aside>September 2004 to April 2007</aside>
                 </article>
-            
+
                 <!-- Next / Previous arrows for slider -->
                 <a class="prev" onclick="moveDetail(-1)">&#10094;</a>
                 <a class="next" onclick="moveDetail(1)">&#10095;</a>
-            
+
                 <!--Navigation dashes-->
                 <div class="dashContainer">
                     <span class="dash" onclick="selectedDetail(1)"></span>
                     <span class="dash" onclick="selectedDetail(2)"></span>
                     <span class="dash" onclick="selectedDetail(3)"></span>
                 </div>
-            
+
             </section>
-        
+
         </section>
         <!--Portfolio section-->
         <section id="portfolio">
-            <section class=projectGrid">
+            <section class="projectGrid">
                 <h1>Portfolio</h1>
-                <article class="project"> 
-                    Puppy age Calculator
+                <article class="project">
+                    Puppy Age Calculator<br>
+                    <a href="https://gitlab.com/jcatangui/puppy-age-calculator" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="projImg" src="img/Proj_pupCalc.png">
+                    </a>
                 </article>
-                <article class="project"> 
-                    Puppy age Calculator
+                <article class="project">
+                    Rectangle Area Calculator<br>
+                    <a href="https://gitlab.com/jcatangui/rectangle-area-calculator" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="projImg" src="img/Proj_recCalc.png">
+                    </a>
                 </article>
+
             </section>
 
         </section>
@@ -91,21 +102,19 @@
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="fname"><br>
                 <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname">
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email"><br>
+                <input type="submit" id="submit" value="Submit">
+                <input type="reset" value="Reset">
             </form>
         </section>
-
-
-
-
         <footer>
-            Created by Jonathan Catangui (footer information goes here)
+            Created by Jonathan Catangui :)
         </footer>
-        <div />
 
-
-
-        <script src="/app.js"></script>
+        <script src="/resumeSlider.js"></script>
+    </div>
 </body>
 
 </html>

@@ -37,7 +37,7 @@ nav ul {
   justify-content: space-around;
   margin-right: 50px;
   margin-left: auto;
-  width: 30%;
+  width: 30vw;
   padding-top: 15.5px;
   list-style: none;
 }
@@ -109,6 +109,14 @@ article {
 aside {
   text-align: end;
   margin: 5px;
+}
+
+.highlight{
+  color: rgb(21, 255, 0);
+}
+
+.project{
+  color: rgb(21, 255, 0);
 }
 
 header {
@@ -189,6 +197,31 @@ aside {
   color: rgb(21, 255, 0);
 }
 
+
+/*----Portfolio Grid----*/
+.projectGrid{
+  width: 75%;
+  height: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 0.1fr 1fr;
+  grid-gap: 1px;
+}
+
+#portfolio h1{
+  grid-column-start: 1 ;
+  grid-column-end: span 2;
+}
+
+.projImg{
+  width: 70%;
+  height: 50%;
+  object-fit: cover;
+}
+
+
 /*----Scroll Bar Styles----*/
 /* width */
 ::-webkit-scrollbar {
@@ -208,4 +241,11 @@ aside {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+footer{
+  position:sticky;
+  bottom: 0;
+  text-align: center;
+  font-size: 10px;
 }
