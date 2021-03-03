@@ -6,7 +6,7 @@
 
 body {
   font-family: "DotGothic16", sans-serif;
-  background: darkgrey;
+  background: rgb(19, 19, 19);
   color: white;
   line-height: 1.6;
   height: 100vh;
@@ -111,12 +111,17 @@ aside {
   margin: 5px;
 }
 
-.highlight{
+.highlight {
   color: rgb(21, 255, 0);
 }
 
-.project{
+.project {
   color: rgb(21, 255, 0);
+}
+
+.project a:hover {
+  filter: brightness(80%);
+  transition: filter 0.3s ease;
 }
 
 header {
@@ -144,7 +149,6 @@ header {
   width: auto;
   margin-top: -30px;
   padding: 16px;
-  color:
   font-weight: bold;
   font-size: 30px;
   border-radius: 0 3px 3px 0;
@@ -168,7 +172,7 @@ header {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  color:darkgray;
+  color: darkgray;
 }
 
 /* The dots/bullets/indicators */
@@ -180,7 +184,6 @@ header {
   background-color: darkslategray;
   display: inline-block;
   transition: background-color 0.6s ease;
-  
 }
 
 /* Add a background color to the active dot/circle */
@@ -197,35 +200,33 @@ aside {
   color: rgb(21, 255, 0);
 }
 
-
 /*----Portfolio Grid----*/
-.projectGrid{
+.projectGrid {
   width: 75%;
   height: 80%;
   margin-right: auto;
   margin-left: auto;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 0.1fr 1fr;
   grid-gap: 1px;
 }
 
-#portfolio h1{
-  grid-column-start: 1 ;
+#portfolio h1 {
+  grid-column-start: 1;
   grid-column-end: span 2;
 }
 
-.projImg{
+.projImg {
   width: 70%;
   height: 50%;
   object-fit: cover;
 }
 
-
 /*----Scroll Bar Styles----*/
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 7px;
 }
 
 /* Track */
@@ -243,8 +244,8 @@ aside {
   background: #555;
 }
 
-footer{
-  position:sticky;
+footer {
+  position: sticky;
   bottom: 0;
   text-align: center;
   font-size: 10px;
