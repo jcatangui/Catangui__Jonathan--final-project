@@ -1,0 +1,3 @@
+JWTKEY=1902mdo20d239
+USER_DB_FILE_LOCATION=./data/users.json
+ENTRY_DB_FILE_LOCATION=./data/entries.json
