@@ -1,4 +1,4 @@
-Front End React App
+# FS1010 Project - Front End React App
 
 Converted Personal HTML site to React components.
 
