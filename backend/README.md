@@ -6,7 +6,7 @@ This API will be used to gather data submitted from the contact form on my portf
 To run the application run command "npm start"
 
 ROUTES:
-All routes are running at http://localhost:3000
+All routes are running at http://localhost:4000
 
 1.  GET / : Returns application information.
 2.  POST /contact_form/entries : Create a new entry from a contact form

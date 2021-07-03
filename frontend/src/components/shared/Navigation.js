@@ -10,25 +10,26 @@ import {
   Container,
 } from "reactstrap";
 import { NavLink as RouteLink } from "react-router-dom";
+// import "../shared/Navigation.css";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar dark color="dark" expand="md" fixed="top">
+    <Navbar expand="md" fixed="top">
       <Container>
         <NavbarBrand href="">Jonathan Catangui</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
-            <NavItem>
+            {/* <NavItem>
               <NavLink tag={RouteLink} to="/">
                 Home
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
-              <NavLink tag={RouteLink} to="/about">
+              <NavLink tag={RouteLink} to="/">
                 About
               </NavLink>
             </NavItem>
@@ -48,8 +49,8 @@ const Navigation = () => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={RouteLink} to="/login">
-                Login
+              <NavLink tag={RouteLink} to="/entries">
+                Entries
               </NavLink>
             </NavItem>
           </Nav>

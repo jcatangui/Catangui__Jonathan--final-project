@@ -73,6 +73,9 @@ router.post("/auth", validationLogin, async (req, res) => {
   const password = req.body.password;
   const userListObj = await userdb.getAll();
 
+  console.log(req.body.password);
+  console.log(password);
+
   let user = userListObj.find((user) => user.email == email);
 
   if (await bcrypt.compare(password, user.password)) {

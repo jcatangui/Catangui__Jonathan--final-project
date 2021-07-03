@@ -1,14 +1,17 @@
-import React from 'react'
-import { Container } from 'reactstrap'
+import React from "react";
+import { Container } from "reactstrap";
+// import "../shared/footer.css";
 
 const Footer = () => {
-    return(
-    <footer className="py-5 bg-dark">
-        <Container>
-            <p className="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-        </Container>
+  return (
+    <footer>
+      <Container>
+        <p className="m-0 text-center text-white">
+          Created by Jonathan Catangui
+        </p>
+      </Container>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
