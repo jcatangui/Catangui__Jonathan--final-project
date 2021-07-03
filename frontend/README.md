@@ -9,7 +9,7 @@ To run the application run command "npm start"
 Sample users DB included.
 In \backend\data sample copy users.json to data folder.
 
-Default user credentials
+##Default user credentials
 
 Email: jcatangui@gmail.com
 Password: 123456789
